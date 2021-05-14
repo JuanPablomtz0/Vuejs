@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" class="container mt-5">
+        <input type="text" v-model="tipoInput">
+        <input v-bind:type="tipoInput" v-model="valor">
+        {{valor}}
+
+        <hr>
+        <input type="text" v-model="fondo">
+        <p :class="fondo">la noche es obscura y oculta todo, aveces hasto lo bueno y puro de corrazon parece ser ser algo lleno de mala intencia</p>
+
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>
